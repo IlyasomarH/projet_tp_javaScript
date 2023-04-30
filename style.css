@@ -1,0 +1,45 @@
+li{
+    list-style-type: none;
+}
+
+
+header nav{
+    border: 1px solid black;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+
+}
+
+#afficher{
+    display: block;
+}
+#cacher{
+    display: none;
+}
+#menu{
+    display: none;
+}
+#close{
+    display: none;
+}
+
+
+
+@media screen and (max-width:600px){
+    ul{
+        flex-direction: column;
+        display: none;
+    }
+
+    #menu{
+        display: block;
+    }
+}
