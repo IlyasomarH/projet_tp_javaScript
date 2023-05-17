@@ -134,22 +134,22 @@ precendent.addEventListener('click', function(){
 // Exercice 5
 
 
-// setTimeout(()=>{
+setInterval(()=>{
  
-//     enleveActiveImg()
-//     etape++
-//     if(etape>=imgsilde.length)
-//     {
-//       etape=0
+    enleveActiveImg()
+    etape++
+    if(etape>=imgsilde.length)
+    {
+      etape=0
       
-//     }
-//     imgsilde[etape].classList.add('active')
-//     if(etape<0)
-//     {
-//       etape=imgsilde.length-1
+    }
+    imgsilde[etape].classList.add('active')
+    if(etape<0)
+    {
+      etape=imgsilde.length-1
       
-//     }
+    }
   
 
-// },3000)
+},3000)
 
