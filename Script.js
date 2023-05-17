@@ -52,8 +52,6 @@ close.addEventListener('click', function(){
 
 
 
-
-
 // Exercice 3
 
 if(bodyclass=='contact')
@@ -80,7 +78,78 @@ form.onsubmit = function(e) {
 
 
 
+
 }
 
 
+  //  Exercice 4
+
+
+  let suivant=document.querySelector('.suivant')
+  let precendent=document.querySelector('.precedent')
+  let imgsilde= document.querySelectorAll('section.slider img')
+
+  let etape=0
+
+
+  function enleveActiveImg(){
+    for(let i=0; i<imgsilde.length; i++){
+
+      imgsilde[i].classList.remove('active')
+
+    }
+  }
+
+
+
+suivant.addEventListener('click', function(){
+  enleveActiveImg()
+  etape++
+  if(etape>=imgsilde.length)
+  {
+    etape=0
+    
+  }
+  imgsilde[etape].classList.add('active')
+})
+
+
+precendent.addEventListener('click', function(){
+  enleveActiveImg()
+  etape--
+  if(etape<0)
+  {
+    etape=imgsilde.length-1
+    
+  }
+  imgsilde[etape].classList.add('active')
+})
+
+
+
+
+
+
+
+// Exercice 5
+
+
+// setTimeout(()=>{
+ 
+//     enleveActiveImg()
+//     etape++
+//     if(etape>=imgsilde.length)
+//     {
+//       etape=0
+      
+//     }
+//     imgsilde[etape].classList.add('active')
+//     if(etape<0)
+//     {
+//       etape=imgsilde.length-1
+      
+//     }
+  
+
+// },3000)
 

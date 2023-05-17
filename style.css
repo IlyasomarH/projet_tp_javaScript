@@ -5,6 +5,8 @@
     transition-property: border-bottom;
     transition-duration: 1s;
 }
+
+
 a{
     text-decoration: none;
     color: #ddd;
@@ -47,8 +49,41 @@ h1{
     color: #801414;
 }
 
+section.slider{
+    height: 100vh;
+    position: relative;
+}
 
 
+section.slider img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+section.slider img.active{
+    opacity: 1;
+}
+
+
+div.precedent, div.suivant{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* border: 1px solid beige; */
+  
+}
+div.precedent{
+    right: 1rem;
+    color: white;
+}
+
+div.suivant{
+left: 1rem;
+color: white;
+}
 #afficher{
     display: block;
 }
