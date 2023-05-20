@@ -28,6 +28,7 @@ header{
     position: fixed;
     width: 90%;
     z-index: 2;
+    top: 0;
     /* overflow: hidden; */
 
     
@@ -157,6 +158,10 @@ span#messageErreur{
     /* opacity: .5; */
     font-size: .6em;
     display: none;
+}
+
+.main-service{
+    margin-top: 100px;
 }
 
 
